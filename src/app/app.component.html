@@ -77,6 +77,6 @@
             </div>
         </div>
 
-        <button class="btn" type="submit" [disabled]="form.invalid"> Send form</button>
+        <button class="btn" type="submit" [disabled]="form.invalid || form.pending "> Send form</button>
     </form>
 </div>
