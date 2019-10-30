@@ -15,6 +15,10 @@
                 <small *ngIf="form.get('email').errors.restrictedEmail">
                     Емейл {{ form.get('email').value }} заборонений
                 </small>
+
+                <small *ngIf="form.get('email').errors.uniqEmail">
+                    Емейл {{ form.get('email').value }} вже існує
+                </small>
             </div>
 
         </div>
