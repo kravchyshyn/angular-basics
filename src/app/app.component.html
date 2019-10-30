@@ -1,13 +1,6 @@
 <div class="container">
-    <h1>Angular NgModels</h1>
+    <h1>RxJS Intro</h1>
 
-    <app-switch
-        [(ngModel)]="appState"
-        (ngModelChange)="handleChange()"
-    >
-    </app-switch>
-
-    <hr>
-
-    <p> {{ appState }}</p>
+    <button class="btn" (click)="stop()"> Stop Interval</button>
+    <button class="btn btn-danger" (click)="next()">Next Value</button>
 </div>
