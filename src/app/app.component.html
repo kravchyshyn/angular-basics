@@ -12,6 +12,9 @@
                 <small *ngIf="form.get('email').errors.email">
                     Емейл введено некоректно
                 </small>
+                <small *ngIf="form.get('email').errors.restrictedEmail">
+                    Емейл {{ form.get('email').value }} заборонений
+                </small>
             </div>
 
         </div>
